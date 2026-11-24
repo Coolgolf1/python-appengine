@@ -3,7 +3,7 @@ from flask import Flask, render_template, request
 def convert_currency(amount, rate=1.1):
     return round(amount * rate, 2)
 
-app = Flask(__name__) 
+app = Flask(__name__)  
 
 @app.route('/', methods=['GET', 'POST'])
 def home():
